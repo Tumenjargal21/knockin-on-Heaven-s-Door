@@ -157,10 +157,9 @@ header p{
   *zoom: 1;
   max-width: 100%;
   background-color: #24B5AA;
-  height: 400px;
   margin-top: 20px;
 }
-.triangle{
+.triangle-down{
   width: 30%;
   height: 0px;
   border-left: 50px solid transparent;
@@ -168,9 +167,18 @@ header p{
   border-top: 30px solid #fff;
   margin-left: 2%;
 }
+.triangle-up{
+  width: 30%;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 30px solid #fff;
+  margin-left: 2%;
+  float: left;
+}
 .project-ideas aside {
   float: left;
-  margin: 10px 3.3%;
+  margin: 0px 6%;
   width: 20%;
 }
 .notificationBar{
@@ -266,3 +274,7 @@ header p{
 }
 #next{right:0px; border-radius:7px 0px 0px 7px;}
 #previous{left:40px; border-radius:0px 7px 7px 7px;}
+.statistic{
+  width: 100%;
+  background-color: #FFA7A7;
+}
