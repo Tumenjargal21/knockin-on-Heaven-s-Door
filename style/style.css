@@ -180,56 +180,57 @@ header p{
   float: left;
   margin: 0px 6%;
   width: 20%;
+  height: 350px;
 }
-.notificationBar{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.notificationBar li{
-  margin-top: 30px;
-}
-.notificationBar li i{
-  width: 45px;
-  height: 45px;
-  display: block;
+.project-ideas aside h1{
   text-align: center;
-  border-radius: 50%;
-  border:1px solid #000;
-  background-color: rgba(255,255,255,0.3);
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #BDF1F1;
+  width: 100%;
+  margin-top: 40px;
 }
-.notificationBar li a{
-  text-decoration: none;
-  color: #000;
-  float: none;
+.project-ideas nav{
+  position: relative;
+  width: 60%;
+  height: 25px;
+  float: right;
+  right: 5%;
+  bottom: 10px;
+  text-align: center;
 }
-.notificationBar:after{
-  content: '';
-  width: 1px;
+.project-ideas >nav span{
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: rgba(255, 255, 255,0.5);
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.project-ideas >nav span:hover{
+background-color: #FFC0B6;
+}
+.table-col-2{
+  border: none;
+  text-align: center;
+  width: 100%;
   height: 100%;
-  background-color: #000;
-  position: absolute;
-  top: 0px;
-  left: 23px;
-  z-index: -1;
+  background-color: rgba(255,255,255,0.1);
 }
-.icon{
-  font-size: 35px;
-}
+
 .slideshow{
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .slides{
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  height: 500px;
+  height: 450px;
   width: 60%;
   overflow: hidden;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0);
   color: #333;
 }
 .current{
@@ -261,4 +262,21 @@ header p{
 .tiltview img{
   width: 250px;
   height: 400px;
+}
+.members{
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 20px;
+}
+.clipped{
+  font: bold 5em/1.5 Oswald;
+  width: 35%;
+  height: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1em;
+  background: url("http://www.isobelsimages.com/assets_d/10682/portfolio_media/epchickhead_178_orig.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
