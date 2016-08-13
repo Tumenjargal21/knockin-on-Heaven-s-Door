@@ -6,11 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main-js.js"></script>
 </head>
 
 <body>
 	<section>
 		<header id="header-main">
+		<div class="side-nav-bar" id="side-navBar" onclick="open_navbarMenu()">
+		<div></div>
+		<div></div>
+		<div></div>
+	    </div>
 		  <nav class=" nav-links">
 			<ul class="nav-menu">
 				<li><a href="">HOME</a></li>
@@ -20,6 +26,21 @@
 		 	</ul>
 		  </nav>
 	    </header>
+	    <!--*******************************-->
+	<!--Sidebar navigation menu overlay-->
+	<!--*******************************-->
+	<nav class="side_navigation" id="side-navigationMenu">
+		<i class="ion-close-round" id="close-navBar" onclick="close_navbarMenu()"></i>
+		<ul>
+			<li>HOME</li>
+			<li>NEWS</li>
+			<li>LESSON</li>
+			<li>PROJECT</li>
+			<li>CONTACT</li>
+			<LI>MORE</LI>
+
+		</ul>
+	</nav>
 	   <div class="wrapper">
 	    	<<header>
 		       <p>WELCOME TO MY WORLD</p>
