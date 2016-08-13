@@ -6,11 +6,17 @@ Website: http://....;
 
 @import 'https://fonts.googleapis.com/css?family=Slabo+27px';
 @import 'https://fonts.googleapis.com/css?family=Black+Ops+One';
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Lobster';
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 body{
   margin: 0;
   background-color: #FFFEFE;
 
+}
+.blackjack-temp{
+  background-color: #FFFFFF;
+  margin: 0;
 }
 #header-main {
   width: 100%;
@@ -55,6 +61,68 @@ body{
 .nav-menu  li a:hover{
   background-color: pink;
 }
+.side-nav-bar{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  position: absolute;
+}
+.side-nav-bar div{
+    border-radius: 25%;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition-duration:0.2s;
+}
+.side-nav-bar:hover div{
+    background-color: rgba(110, 5, 148,1);
+}
+.side_navigation{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,1);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 50px;
+
+}
+.side_navigation ul{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  font-style: bold;
+  color: rgba(255, 187, 187,1);
+}
+.side_navigation ul li{
+  width: 100%;
+  padding-top: 15px;
+  text-decoration: none;
+  height: 50px;
+  text-align: center;
+}
+.side_navigation ul li:hover{
+  background-color: rgba(251, 80, 80,0.8);
+}
+.side_navigation i{
+  margin: 0;
+  padding-top: 0;
+  width: 100%;
+  float: right;
+  position: relative;
+}
+i.ion-close-round{
+  font-size: 35px;
+  color: rgba(251, 80, 80,0.8);
+  bottom: 40px;
+  left:200px;
+}
 .wrapper{
   width: 100%;
   height: 100%;
@@ -90,6 +158,11 @@ header p{
   min-height: 1px;
   padding: 15px;
 }
+.col-0{
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+}
 .col-1{
   width: 25%;
   min-height: 400px;
@@ -104,12 +177,13 @@ header p{
   transition-timing-function: linear;
 }
 .col-2{
-  width: 32.5%;
+  width: 32%;
   margin-top: 20px;
-  margin-right: 2px;
-  min-height: 300px;
-  border-style: inset;
+  margin-right: 15px;
+  min-height: 200px;
+  border-style: solid;
   border-radius: 25px;  
+  border-width: 1px;
   border-color: #24B5AA;
 }
 .col-3{
@@ -259,6 +333,14 @@ background-color: #FFC0B6;
   text-align: center;
   line-height: 1em;
   background: url("http://www.isobelsimages.com/assets_d/10682/portfolio_media/epchickhead_178_orig.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#clipped-cursive{
+  font: 4em/1.4 Pacifico;
+  text-transform: none;
+  background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6T3PVDHBENk488Zi2P-npGNBPq_ygk5_SKTxPR4iObdLc-wI0") no-repeat center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
